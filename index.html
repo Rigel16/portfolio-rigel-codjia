@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rigel Codjia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <header class="header">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="./assets/Photo 1 Rigel CODJIA.jpeg" alt="Rigel Codjia">
+                </div>
+                <h1 class="name">Rigel Codjia</h1>
+                <h2 class="title" data-translate="title"></h2>
+                <div class="scroll-indicator">↓</div>
+            </div>
+        </header>
+
+        <section class="section" id="competences">
+            <h3 class="section-title" data-translate="competences">Compétences</h3>
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <h4 data-translate="frontend">Front-end</h4>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90"></div>
+                    </div>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h4 data-translate="backend">Back-end</h4>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85"></div>
+                    </div>
+                    <p>Node.js, Express, MongoDB, PHP, MySQL</p>
+                </div>
+                <div class="skill-item">
+                    <h4 data-translate="frameworks">Frameworks</h4>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80"></div>
+                    </div>
+                    <p>React, Vue.js, Angular, Symfony, Laravel</p>
+                </div>
+                <div class="skill-item">
+                    <h4 data-translate="outils">Outils</h4>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85"></div>
+                    </div>
+                    <p>Git, Docker, AWS, Webpack</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h3 class="section-title" data-translate="experience">Expérience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4 data-translate="projetTitle">Projets Personnels</h4>
+                        <p data-translate="projetDesc">Développement de plusieurs applications web full stack</p>
+                        <ul>
+                            <li>Application de gestion de tâches avec React et Node.js</li>
+                            <li>Site e-commerce avec Vue.js et Express</li>
+                            <li>API RESTful avec Node.js et MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="formation">
+            <h3 class="section-title" data-translate="formation">Formation</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4 data-translate="formationTitle">Formation Développeur Web Full Stack</h4>
+                        <p data-translate="formationDesc">En recherche d'alternance pour continuer mon parcours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projets">
+            <h3 class="section-title" data-translate="projets">Projets</h3>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/200" alt="E-commerce Project" class="project-image">
+                    <div class="project-info">
+                        <h4>E-commerce Platform</h4>
+                        <p data-translate="projetDesc">Application e-commerce full stack</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="certifications">
+            <h3 class="section-title" data-translate="certifications">Certifications</h3>
+            <div class="certificate-gallery">
+                <div class="certificate-card">
+                    <div class="certificate-logo">🏆</div>
+                    <h4>Web Development</h4>
+                    <p>FreeCodeCamp</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h3 class="section-title" data-translate="contact">Contact</h3>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <p>rigel.codjia@email.com</p>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <p>+33 6 XX XX XX XX</p>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <p>France</p>
+                </div>
+                <div class="contact-item">
+                    <span>💻</span>
+                    <p>github.com/rigelcodjia</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="language-selector">
+        <select id="language-select">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
+    <div class="floating-menu">
+        <div class="menu-item" data-section="competences">💼</div>
+        <div class="menu-item" data-section="experience">📚</div>
+        <div class="menu-item" data-section="formation">🎓</div>
+        <div class="menu-item" data-section="contact">📞</div>
+    </div>
+
+    <div class="notification-badge" id="notification">
+        Nouveau message
+    </div>
+
+    <div class="floating-buttons">
+        <button class="floating-button" onclick="window.print()">🖨️</button>
+        <button class="floating-button" id="theme-toggle">🎨</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
