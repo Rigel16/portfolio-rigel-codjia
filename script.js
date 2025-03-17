@@ -227,13 +227,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Initialisation de Typed.js
 new Typed('.title', {
-    strings: ['Développeur Web Full Stack', 'En recherche d\'alternance', 'Passionné par le code'],
-    typeSpeed: 10000,     // Vitesse de frappe (en millisecondes)
-    backSpeed: 6000,      // Vitesse d'effacement
-    startDelay: 50000,    // Délai avant le démarrage
-    backDelay: 15000,    // Pause avant de supprimer le texte
+    strings: ['Développeur Web Full Stack', 'En recherche d\'alternance pour septembre 2025', 'Passionné par le code'],
+    typeSpeed: 100,     // Vitesse de frappe (en millisecondes)
+    backSpeed: 60,      // Vitesse d'effacement
+    startDelay: 500,    // Délai avant le démarrage
+    backDelay: 1500,    // Pause avant de supprimer le texte
     loop: true          // Boucle l'animation
 });
+
 
 
 // Animation du menu flottant
@@ -509,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const translations = {
+/* const translations = {
     fr: {
         title: "Développeur Web Full Stack",
         subtitle: "En recherche d'alternance",
@@ -564,7 +565,7 @@ const translations = {
         formationTitle: "Formación como Desarrollador Web Full Stack",
         formationDesc: "Buscando programa de formación dual para continuar mi trayectoria"
     }
-};
+}; */
 
 // Fonction pour changer la langue
 function changeLanguage(lang) {
@@ -609,3 +610,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLang;
     changeLanguage(savedLang);
 });
+
+
+
