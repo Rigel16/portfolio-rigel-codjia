@@ -610,35 +610,63 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLang;
     changeLanguage(savedLang);
 });
-document.getElementById("contact-form").addEventListener("submit", function (event) {
+
+
+(function(){
+    emailjs.init("6WQTxEIAx1iRePinr");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
+    
+    let sendBtn = document.getElementById("sendBtn");
+    let responseBox = document.getElementById("response");
 
-    let formData = new FormData(this);
+    // Désactiver le bouton et changer son texte
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Envoi...";
 
-    fetch("traitement.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        let responseDiv = document.getElementById("response");
+    emailjs.send("service_vzm900c", "template_7lj9qty", {
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }).then(function(response) {
+        console.log("SUCCESS!", response);
 
-        if (data.includes("✅")) {
-            responseDiv.className = "response-success";
-        } else {
-            responseDiv.className = "response-error";
-        }
+        // Afficher le message de confirmation stylisé
+        responseBox.textContent = "✅ Message envoyé avec succès !";
+        responseBox.className = "response-success";
+        responseBox.style.opacity = "1";
+        responseBox.style.transform = "translateY(0)";
 
-        responseDiv.innerHTML = data; 
-        responseDiv.style.opacity = "1"; 
-        responseDiv.style.transform = "translateY(0)"; 
+        // Réinitialiser le formulaire
+        document.getElementById("contact-form").reset();
+
+        // Réactiver le bouton après 3 secondes
+        setTimeout(() => {
+            sendBtn.disabled = false;
+            sendBtn.textContent = "Envoyer";
+            responseBox.style.opacity = "0";
+            responseBox.style.transform = "translateY(-10px)";
+        }, 3000);
+
+    }, function(error) {
+        console.error("Erreur EmailJS :", error);
+
+        // Afficher un message d'erreur stylisé
+        responseBox.textContent = "❌ Erreur lors de l'envoi. Veuillez réessayer.";
+        responseBox.className = "response-error";
+        responseBox.style.opacity = "1";
+        responseBox.style.transform = "translateY(0)";
+
+        // Réactiver le bouton
+        sendBtn.disabled = false;
+        sendBtn.textContent = "Envoyer";
 
         setTimeout(() => {
-            responseDiv.style.opacity = "0"; 
-            responseDiv.style.transform = "translateY(-10px)";
-        }, 5000); // Cache le message après 5s
-
-        document.getElementById("contact-form").reset();
-    })
-    .catch(error => console.error("Erreur :", error));
+            responseBox.style.opacity = "0";
+            responseBox.style.transform = "translateY(-10px)";
+        }, 3000);
+    });
 });
