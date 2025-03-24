@@ -1,9 +1,13 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Rigel Codjia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
@@ -14,12 +18,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <ul class="navbar-list">
             <li class="navbar-item"><a href="#accueil">Accueil</a></li>
             <li class="navbar-item"><a href="project.html">Projets</a></li>
         </ul>
-    </nav>
+    </nav> -->
     
     <div id="particles-js"></div>
     <div class="container">
@@ -114,7 +118,6 @@
                 </div>
             </div>
         </section>
-
         <section class="section" id="formation">
             <h3 class="section-title" data-translate="formation">Formation</h3>
             <div class="timeline">
@@ -167,9 +170,7 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Express</span>
-                            <span class="tech-badge">API RESTful</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -213,8 +214,6 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Express</span>
                             <span class="tech-badge">API RESTful</span>
                         </div>
                     </div>
@@ -223,28 +222,16 @@
                 
             </div>
         </section>
-
-        <section class="section" id="certifications">
-            <h3 class="section-title" data-translate="certifications">Certifications</h3>
-            <div class="certificate-gallery">
-                <div class="certificate-card">
-                    <div class="certificate-logo">🏆</div>
-                    <h4>Web Development</h4>
-                    <p>FreeCodeCamp</p>
-                </div>
-            </div>
-        </section>
-
         <section class="section" id="contact">
             <h3 class="section-title" data-translate="contact">Contact</h3>
             <div class="contact-grid">
                 <div class="contact-item">
                     <span>📧</span>
-                    <p>rigel.codjia@email.com</p>
+                    <a href="mailto:rigelcodjia@gmail.com" target="_blank" rel="noopener noreferrer">rigelcodjia@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <span>📱</span>
-                    <p>+33 6 75 26 41 25</p>
+                    <a href="tel:+33675264125">+33 6 75 26 41 25</a>
                 </div>
                 <div class="contact-item">
                     <span>📍</span>
@@ -252,10 +239,39 @@
                 </div>
                 <div class="contact-item">
                     <span>💻</span>
-                    <p>github.com/rigelcodjia</p>
+                    <a href="https://github.com/Rigel16" target="_blank" rel="noopener noreferrer">GITHUB</a>
+
                 </div>
             </div>
+            <div class="contact-container">
+    <form id="contact-form" action="traitement.php" method="POST">
+        <div class="input-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Nom</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Message</label>
+        </div>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <p id="response"></p>
+</div>
+
+
+<p id="response"></p>
+
         </section>
+
+        
     </div>
 
     <div class="language-selector">
@@ -270,11 +286,8 @@
         <div class="menu-item" data-section="competences">💼</div>
         <div class="menu-item" data-section="experience">📚</div>
         <div class="menu-item" data-section="formation">🎓</div>
+        <div class="menu-item" data-section="projets">🚀</div>
         <div class="menu-item" data-section="contact">📞</div>
-    </div>
-
-    <div class="notification-badge" id="notification">
-        Nouveau message
     </div>
 
     <div class="floating-buttons">
@@ -282,6 +295,23 @@
         <button class="floating-button" id="theme-toggle">🎨</button>
     </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body card">
+            <video src="assets/Enregistrement de l’écran 2025-03-20 à 12.39.14.mov" class="object-fit-cover card" controls></video>
+        </div>
+    </div>
+  </div>
+
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
+

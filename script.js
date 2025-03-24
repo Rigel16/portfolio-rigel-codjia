@@ -610,6 +610,35 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLang;
     changeLanguage(savedLang);
 });
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
 
+    let formData = new FormData(this);
 
+    fetch("traitement.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        let responseDiv = document.getElementById("response");
 
+        if (data.includes("✅")) {
+            responseDiv.className = "response-success";
+        } else {
+            responseDiv.className = "response-error";
+        }
+
+        responseDiv.innerHTML = data; 
+        responseDiv.style.opacity = "1"; 
+        responseDiv.style.transform = "translateY(0)"; 
+
+        setTimeout(() => {
+            responseDiv.style.opacity = "0"; 
+            responseDiv.style.transform = "translateY(-10px)";
+        }, 5000); // Cache le message après 5s
+
+        document.getElementById("contact-form").reset();
+    })
+    .catch(error => console.error("Erreur :", error));
+});
