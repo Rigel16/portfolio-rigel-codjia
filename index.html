@@ -15,6 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 <body>
     <!-- <nav class="navbar">
@@ -77,8 +79,8 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="projetTitle">Alternance</h4>
-                        <p data-translate="projetDesc">Développeur Web et Community Manager en Alternance à Mackiona & Fils (2023 - 2024)</p>
+                        <h4 data-translate="projetTitle:alternance">Alternance</h4>
+                        <p data-translate="projetDesc:alternance">Développeur Web et Community Manager en Alternance à Mackiona & Fils (2023 - 2024)</p>
                         <ul>
                             <li>Développement et maintenance de sites web (HTML, CSS, JavaScript, PHP, MySQL).</li>
                             <li>Gestion des réseaux sociaux : création de contenu, animation de communauté et analyse des performances.</li>
@@ -92,8 +94,8 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="projetTitle">Projets Personnels</h4>
-                        <p data-translate="projetDesc">Création du site web de WebHeroTech</p>
+                        <h4 data-translate="projetTitle:projetPersonnel">Projets Personnels</h4>
+                        <p data-translate="projetDesc:projetWebHeroTech">Création du site web de WebHeroTech</p>
                         <ul>
                             <li>Conception et développement complet du site web en autonomie (front-end et back-end).</li>
                             <li>Optimisation du référencement naturel (SEO) et de l'expérience utilisateur (UX).</li>
@@ -106,8 +108,8 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="projetTitle">Job étudiant</h4>
-                        <p data-translate="projetDesc">Employé polyvalent chez Burger King Contrat étudiant (2021 - 2023) </p>
+                        <h4 data-translate="projetTitle:jobEtudiant">Job étudiant</h4>
+                        <p data-translate="projetDesc:jobBurgerKing">Employé polyvalent chez Burger King Contrat étudiant (2021 - 2023) </p>
                         <ul>
                             <li>Accueil des clients et gestion de la prise de commande.</li>
                             <li>Préparation des repas en respectant les normes d'hygiène et de sécurité.</li>
@@ -118,36 +120,36 @@
             </div>
         </section>
         <section class="section" id="formation">
-            <h3 class="section-title" data-translate="formation">Formation</h3>
+            <h3 class="section-title" data-translate="formation:">Formation</h3>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="formationTitle">WEB@CADEMIE BY EPITECH</h4>
-                        <p data-translate="formationDesc">Intégrateur-développeur web 2024 - 2026</p>
+                        <h4 data-translate="formationTitle:webAcademie">WEB@CADEMIE BY EPITECH</h4>
+                        <p data-translate="formationDesc:webAcademie">Intégrateur-développeur web 2024 - 2026</p>
                     </div>
                 </div>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="formationTitle">STUDI</h4>
-                        <p data-translate="formationDesc">Devops 2023 - 2024</p>
+                        <h4 data-translate="formationTitle:studi">STUDI</h4>
+                        <p data-translate="formationDesc:studi">Devops 2023 - 2024</p>
                     </div>
                 </div>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="formationTitle">EURATECHNOLOGIE</h4>
-                        <p data-translate="formationDesc">B-TECH Mars 2024 - Avril 2024 </p>
+                        <h4 data-translate="formationTitle:euraTechnologie">EURATECHNOLOGIE</h4>
+                        <p data-translate="formationDesc:euraTechnologie">B-TECH Mars 2024 - Avril 2024 </p>
                     </div>
                 </div>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h4 data-translate="formationTitle">Université de lille Cité scientifique</h4>
-                        <p data-translate="formationDesc">Maths-Info 2020 - 2023</p>
+                        <h4 data-translate="formationTitle:universitelille">Université de lille Cité scientifique</h4>
+                        <p data-translate="formationDesc:universitelille">Maths-Info 2020 - 2023</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +163,6 @@
                         <span class="webherotech-text">WebHeroTech</span>
                     </div>
                     <div class="project-info">
-                        <h4>WebHeroTech</h4>
                         <p data-translate="projetDesc">Développement et déploiement du site web complet webherotech avec des technologies modernes.</p>
                         <div class="tech-stack">
                             <span class="tech-badge">JavaScript</span>
@@ -179,20 +180,19 @@
             <div class="project-gallery">
                 <div class="project-card">
                     <div class="project-image">
-                        <span class="webherotech-text">WebHeroTech</span>
+                        <span class="webherotech-text">My Twitter</span>
                     </div>
                     <div class="project-info">
-                        <h4>WebHeroTech</h4>
-                        <p data-translate="projetDesc">Développement et déploiement du site web complet webherotech avec des technologies modernes.</p>
+                        <p data-translate="projetDesc">Application web inspirée de Twitter, utilisant React pour le front-end et Laravel pour le back-end, avec une fonctionnalité de messagerie privée permettant aux utilisateurs d’échanger des messages en toute confidentialité.</p>
                         <div class="tech-stack">
                             <span class="tech-badge">JavaScript</span>
                             <span class="tech-badge">HTML</span>
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Express</span>
-                            <span class="tech-badge">API RESTful</span>
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">API</span>
                         </div>
                     </div>
                     
@@ -202,18 +202,112 @@
             <div class="project-gallery">
                 <div class="project-card">
                     <div class="project-image">
-                        <span class="webherotech-text">WebHeroTech</span>
+                        <span class="webherotech-text">My Spotify</span>
                     </div>
                     <div class="project-info">
-                        <h4>WebHeroTech</h4>
-                        <p data-translate="projetDesc">Développement et déploiement du site web complet webherotech avec des technologies modernes.</p>
+                        <p data-translate="projetDesc">Clone de Spotify créé avec React pour l'interface utilisateur et Docker pour garantir une portabilité maximale de l'application.</p>
                         <div class="tech-stack">
                             <span class="tech-badge">JavaScript</span>
                             <span class="tech-badge">HTML</span>
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">API RESTful</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">API</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="webherotech-text">Puissance 4</span>
+                    </div>
+                    <div class="project-info">
+                        <p data-translate="projetDesc">Jeu de Puissance 4 sous forme de plugin interactif, développé en HTML, CSS et JavaScript, facile à intégrer dans une page web.
+
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">Plugin</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="webherotech-text">My meetic</span>
+                    </div>
+                    <div class="project-info">
+                        <p data-translate="projetDesc">Plateforme de rencontres développée avec HTML, CSS, et JavaScript pour l'interface, et PHP avec MySQL pour la gestion des profils et des messages.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="webherotech-text">My cinema</span>
+                    </div>
+                    <div class="project-info">
+                        <p data-translate="projetDesc">Site de gestion de films avec un back-end PHP et une base de données MySQL, offrant une interface responsive en HTML, CSS, et JavaScript.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="webherotech-text">framework css</span>
+                    </div>
+                    <div class="project-info">
+                        <p data-translate="projetDesc">Création d'un framework CSS personnalisé avec des composants modulaires en HTML, CSS, JavaScript et SASS pour un design responsive</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">SASS</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="webherotech-text">css generator</span>
+                    </div>
+                    <div class="project-info">
+                        <p data-translate="projetDesc">Générateur de code CSS dynamique avec une interface intuitive en HTML, CSS, et JavaScript, et un back-end PHP pour des fonctionnalités avancées.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">PHP</span>
                         </div>
                     </div>
                     
@@ -304,7 +398,6 @@
     </div>
   </div>
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 

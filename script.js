@@ -509,8 +509,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* const translations = {
+const translations = {
     fr: {
+        // Informations générales
         title: "Développeur Web Full Stack",
         subtitle: "En recherche d'alternance",
         competences: "Compétences",
@@ -518,17 +519,60 @@ document.addEventListener('DOMContentLoaded', () => {
         formation: "Formation",
         contact: "Contact",
         projets: "Projets",
-        certifications: "Certifications",
+        
+        // Compétences
         frontend: "Front-end",
-        backend: "Back-end",
+        backend: "Back-end", 
         frameworks: "Frameworks",
         outils: "Outils",
-        projetTitle: "Projets Personnels",
-        projetDesc: "Développement de plusieurs applications web full stack",
-        formationTitle: "Formation Développeur Web Full Stack",
-        formationDesc: "En recherche d'alternance pour continuer mon parcours"
+
+        // Expérience
+        projetTitle: {
+            alternance: "Alternance",
+            projetPersonnel: "Projets Personnels", 
+            jobEtudiant: "Job étudiant"
+        },
+        projetDesc: {
+            alternance: "Développeur Web et Community Manager en Alternance à Mackiona & Fils (2023 - 2024)",
+            projetWebHeroTech: "Création du site web de WebHeroTech",
+            jobBurgerKing: "Employé polyvalent chez Burger King Contrat étudiant (2021 - 2023)"
+        },
+
+        // Formations
+        formationTitle: {
+            webAcademie: "WEB@CADEMIE BY EPITECH",
+            studi: "STUDI",
+            euraTechnologie: "EURATECHNOLOGIE", 
+            universitelille: "Université de lille Cité scientifique"
+        },
+        formationDesc: {
+            webAcademie: "Intégrateur-développeur web 2024 - 2026",
+            studi: "Devops 2023 - 2024",
+            euraTechnologie: "B-TECH Mars 2024 - Avril 2024",
+            universitelille: "Maths-Info 2020 - 2023"
+        },
+
+        // Projets
+        projetsDesc: {
+            webHeroTech: "Développement et déploiement du site web complet webherotech avec des technologies modernes.",
+            myTwitter: "Application web inspirée de Twitter, utilisant React pour le front-end et Laravel pour le back-end, avec une fonctionnalité de messagerie privée permettant aux utilisateurs d'échanger des messages en toute confidentialité.",
+            mySpotify: "Clone de Spotify créé avec React pour l'interface utilisateur et Docker pour garantir une portabilité maximale de l'application.",
+            puissance4: "Jeu de Puissance 4 sous forme de plugin interactif, développé en HTML, CSS et JavaScript, facile à intégrer dans une page web.",
+            myMeetic: "Plateforme de rencontres développée avec HTML, CSS, et JavaScript pour l'interface, et PHP avec MySQL pour la gestion des profils et des messages.",
+            myCinema: "Site de gestion de films avec un back-end PHP et une base de données MySQL, offrant une interface responsive en HTML, CSS, et JavaScript.",
+            frameworkCss: "Création d'un framework CSS personnalisé avec des composants modulaires en HTML, CSS, JavaScript et SASS pour un design responsive",
+            cssGenerator: "Générateur de code CSS dynamique avec une interface intuitive en HTML, CSS, et JavaScript, et un back-end PHP pour des fonctionnalités avancées."
+        },
+
+        // Boutons et actions
+        regarderVideo: "Regarder la video",
+        envoyerMessage: "Envoyer",
+        nomFormulaire: "Votre Nom",
+        emailFormulaire: "Votre Email", 
+        messageFormulaire: "Votre Message"
     },
     en: {
+        // Translated content following the same structure as French
         title: "Full Stack Web Developer",
         subtitle: "Looking for Work-Study Program",
         competences: "Skills",
@@ -536,17 +580,56 @@ document.addEventListener('DOMContentLoaded', () => {
         formation: "Education",
         contact: "Contact",
         projets: "Projects",
-        certifications: "Certifications",
+        
         frontend: "Front-end",
-        backend: "Back-end",
+        backend: "Back-end", 
         frameworks: "Frameworks",
         outils: "Tools",
-        projetTitle: "Personal Projects",
-        projetDesc: "Development of several full stack web applications",
-        formationTitle: "Full Stack Web Developer Training",
-        formationDesc: "Looking for a work-study program to continue my journey"
+
+        projetTitle: {
+            alternance: "Internship",
+            projetPersonnel: "Personal Projects", 
+            jobEtudiant: "Student Job"
+        },
+        projetDesc: {
+            alternance: "Web Developer and Community Manager Internship at Mackiona & Fils (2023 - 2024)",
+            projetWebHeroTech: "WebHeroTech website creation",
+            jobBurgerKing: "Versatile Employee at Burger King Student Contract (2021 - 2023)"
+        },
+
+        formationTitle: {
+            webAcademie: "WEB@CADEMIE BY EPITECH",
+            studi: "STUDI",
+            euraTechnologie: "EURATECHNOLOGIE", 
+            universitelille: "University of Lille Scientific City"
+        },
+        formationDesc: {
+            webAcademie: "Web Integrator-Developer 2024 - 2026",
+            studi: "Devops 2023 - 2024",
+            euraTechnologie: "B-TECH March 2024 - April 2024",
+            universitelille: "Math-Info 2020 - 2023"
+        },
+
+        projetsDesc: {
+            // Traduire également les descriptions de projets
+            webHeroTech: "Development and deployment of complete WebHeroTech website using modern technologies.",
+            myTwitter: "Web application inspired by Twitter, using React for the front-end and Laravel for the back-end, with a private messaging feature allowing users to exchange messages confidentially.",
+            mySpotify: "Spotify clone created with React for the user interface and Docker to ensure maximum application portability.",
+            puissance4: "Connect Four game in the form of an interactive plugin, developed in HTML, CSS and JavaScript, easy to integrate into a web page.",
+            myMeetic: "Dating platform developed with HTML, CSS, and JavaScript for the interface, and PHP with MySQL for profile and message management.",
+            myCinema: "Movie management site with a PHP back-end and MySQL database, offering a responsive interface in HTML, CSS, and JavaScript.",
+            frameworkCss: "Creation of a custom CSS framework with modular components in HTML, CSS, JavaScript and SASS for a responsive design",
+            cssGenerator: "Dynamic CSS code generator with an intuitive interface in HTML, CSS, and JavaScript, and a PHP back-end for advanced features."
+        },
+
+        regarderVideo: "Watch the video",
+        envoyerMessage: "Send",
+        nomFormulaire: "Your Name",
+        emailFormulaire: "Your Email", 
+        messageFormulaire: "Your Message"
     },
     es: {
+        // Traduire également en espagnol suivant la même structure
         title: "Desarrollador Web Full Stack",
         subtitle: "Buscando programa de formación dual",
         competences: "Habilidades",
@@ -554,42 +637,114 @@ document.addEventListener('DOMContentLoaded', () => {
         formation: "Educación",
         contact: "Contacto",
         projets: "Proyectos",
-        certifications: "Certificaciones",
+        
         frontend: "Front-end",
-        backend: "Back-end",
+        backend: "Back-end", 
         frameworks: "Frameworks",
         outils: "Herramientas",
-        projetTitle: "Proyectos Personales",
-        projetDesc: "Desarrollo de varias aplicaciones web full stack",
-        formationTitle: "Formación como Desarrollador Web Full Stack",
-        formationDesc: "Buscando programa de formación dual para continuar mi trayectoria"
+
+        projetTitle: {
+            alternance: "Pasantía",
+            projetPersonnel: "Proyectos Personales", 
+            jobEtudiant: "Trabajo de Estudiante"
+        },
+        projetDesc: {
+            alternance: "Desarrollador Web y Community Manager en Pasantía en Mackiona & Fils (2023 - 2024)",
+            projetWebHeroTech: "Creación del sitio web de WebHeroTech",
+            jobBurgerKing: "Empleado versátil en Burger King Contrato de Estudiante (2021 - 2023)"
+        },
+
+        formationTitle: {
+            webAcademie: "WEB@CADEMIE BY EPITECH",
+            studi: "STUDI",
+            euraTechnologie: "EURATECHNOLOGIE", 
+            universitelille: "Universidad de Lille Ciudad Científica"
+        },
+        formationDesc: {
+            webAcademie: "Integrador-Desarrollador Web 2024 - 2026",
+            studi: "Devops 2023 - 2024",
+            euraTechnologie: "B-TECH Marzo 2024 - Abril 2024",
+            universitelille: "Matemáticas-Informática 2020 - 2023"
+        },
+
+        projetsDesc: {
+            // Traduire également les descriptions de projets
+            webHeroTech: "Desarrollo e implementación del sitio web completo de WebHeroTech utilizando tecnologías modernas.",
+            myTwitter: "Aplicación web inspirada en Twitter, utilizando React para el front-end y Laravel para el back-end, con una función de mensajería privada que permite a los usuarios intercambiar mensajes de forma confidencial.",
+            mySpotify: "Clon de Spotify creado con React para la interfaz de usuario y Docker para garantizar la máxima portabilidad de la aplicación.",
+            puissance4: "Juego de Conecta Cuatro en forma de complemento interactivo, desarrollado en HTML, CSS y JavaScript, fácil de integrar en una página web.",
+            myMeetic: "Plataforma de citas desarrollada con HTML, CSS y JavaScript para la interfaz, y PHP con MySQL para la gestión de perfiles y mensajes.",
+            myCinema: "Sitio de gestión de películas con back-end PHP y base de datos MySQL, que ofrece una interfaz receptiva en HTML, CSS y JavaScript.",
+            frameworkCss: "Creación de un framework CSS personalizado con componentes modulares en HTML, CSS, JavaScript y SASS para un diseño responsivo",
+            cssGenerator: "Generador de código CSS dinámico con una interfaz intuitiva en HTML, CSS y JavaScript, y un back-end PHP para funciones avanzadas."
+        },
+
+        regarderVideo: "Ver el video",
+        envoyerMessage: "Enviar",
+        nomFormulaire: "Su Nombre",
+        emailFormulaire: "Su Correo Electrónico", 
+        messageFormulaire: "Su Mensaje"
     }
-}; */
+};
 
 // Fonction pour changer la langue
 function changeLanguage(lang) {
-    // Mettre à jour tous les éléments avec l'attribut data-translate
+    // Traduction des textes simples
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
+        const keys = key.split(':');
+        let translation;
+
+        // Gestion des clés imbriquées
+        if (keys.length > 1) {
+            translation = translations[lang][keys[0]][keys[1]];
+        } else {
+            translation = translations[lang][key];
+        }
+
+        if (translation) {
+            // Pour les inputs et textareas, mettre à jour l'attribut placeholder
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.setAttribute('placeholder', translation);
+            } else {
+                element.textContent = translation;
+            }
         }
     });
 
-    // Mettre à jour les textes typés
+    // Mise à jour du titre animé
     if (window.typedInstance) {
         window.typedInstance.destroy();
     }
     
     window.typedInstance = new Typed('.title', {
         strings: [translations[lang].title, translations[lang].subtitle],
-        typeSpeed: 100,     // Ralentit la vitesse de frappe
-        backSpeed: 60,      // Ralentit l'effacement
-        startDelay: 500,    // Pause avant le début de la première animation
-        backDelay: 1500,    // Pause avant l'effacement
-        loop: true          // Active la boucle infinie
+        typeSpeed: 100,
+        backSpeed: 60,
+        startDelay: 500,
+        backDelay: 1500,
+        loop: true
     });
-    
+
+    // Traduction des descriptions de projets
+    document.querySelectorAll('.project-info p').forEach((element, index) => {
+        const projectKeys = Object.keys(translations[lang].projetsDesc);
+        if (projectKeys[index]) {
+            element.textContent = translations[lang].projetsDesc[projectKeys[index]];
+        }
+    });
+
+    // Mise à jour des boutons et labels
+    document.querySelector('#contact-form button').textContent = translations[lang].envoyerMessage;
+    document.querySelectorAll('#contact-form label').forEach((label, index) => {
+        const labelKeys = ['nomFormulaire', 'emailFormulaire', 'messageFormulaire'];
+        label.textContent = translations[lang][labelKeys[index]];
+    });
+
+    // Mise à jour des boutons "Regarder la vidéo"
+    document.querySelectorAll('.btn-success').forEach(button => {
+        button.textContent = translations[lang].regarderVideo;
+    });
 
     // Sauvegarde de la langue choisie
     localStorage.setItem('preferred-language', lang);
@@ -609,6 +764,35 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLang;
     changeLanguage(savedLang);
 });
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.textContent = message;
+    notification.style.position = 'fixed';
+    notification.style.top = '20px';
+    notification.style.right = '-300px';
+    notification.style.backgroundColor = '#333';
+    notification.style.color = 'white';
+    notification.style.padding = '12px 20px';
+    notification.style.borderRadius = '8px';
+    notification.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
+    notification.style.zIndex = '1000';
+    notification.style.opacity = '0';
+    notification.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    notification.style.transform = 'translateX(0)';
+    document.body.appendChild(notification);
+    setTimeout(() => {
+        notification.style.opacity = '1';
+        notification.style.right = '20px';
+    }, 10);
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateX(30px)';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
+}
 
 
 (function(){
