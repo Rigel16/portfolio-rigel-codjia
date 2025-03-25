@@ -353,7 +353,6 @@ gsap.utils.toArray('.certificate-card').forEach(card => {
 
 // Easter egg - Konami Code
 let konamiCode = [];
-// Suite du code JavaScript...
 const correctCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 window.addEventListener('keydown', (e) => {
     konamiCode.push(e.key);
@@ -670,3 +669,13 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         }, 3000);
     });
 });
+
+function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = 'assets/Cv.pdf';
+    link.download = 'Rigel_Codjia_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+window.downloadPDF = downloadPDF;
