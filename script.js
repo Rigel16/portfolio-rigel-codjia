@@ -228,11 +228,12 @@ gsap.registerPlugin(ScrollTrigger);
 // Initialisation de Typed.js
 new Typed('.title', {
     strings: ['Développeur Web Full Stack', 'En recherche d\'alternance pour septembre 2025', 'Passionné par le code'],
-    typeSpeed: 100,     // Vitesse de frappe (en millisecondes)
-    backSpeed: 60,      // Vitesse d'effacement
-    startDelay: 500,    // Délai avant le démarrage
+    typeSpeed: 60000,     // Vitesse de frappe (en millisecondes)
+    backSpeed: 60000,      // Vitesse d'effacement
+    startDelay: 100,    // Délai avant le démarrage
     backDelay: 1500,    // Pause avant de supprimer le texte
-    loop: true          // Boucle l'animation
+    loop: true ,         // Boucle l'animation
+    
 });
 
 
