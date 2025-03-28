@@ -511,7 +511,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const translations = {
     fr: {
-        // Informations générales
         title: "Développeur Web Full Stack",
         subtitle: "En recherche d'alternance",
         competences: "Compétences",
@@ -520,13 +519,11 @@ const translations = {
         contact: "Contact",
         projets: "Projets",
         
-        // Compétences
         frontend: "Front-end",
         backend: "Back-end", 
         frameworks: "Frameworks",
         outils: "Outils",
 
-        // Expérience
         projetTitle: {
             alternance: "Alternance",
             projetPersonnel: "Projets Personnels", 
@@ -537,8 +534,6 @@ const translations = {
             projetWebHeroTech: "Création du site web de WebHeroTech",
             jobBurgerKing: "Employé polyvalent chez Burger King Contrat étudiant (2021 - 2023)"
         },
-
-        // Formations
         formationTitle: {
             webAcademie: "WEB@CADEMIE BY EPITECH",
             studi: "STUDI",
@@ -551,8 +546,6 @@ const translations = {
             euraTechnologie: "B-TECH Mars 2024 - Avril 2024",
             universitelille: "Maths-Info 2020 - 2023"
         },
-
-        // Projets
         projetsDesc: {
             webHeroTech: "Développement et déploiement du site web complet webherotech avec des technologies modernes.",
             myTwitter: "Application web inspirée de Twitter, utilisant React pour le front-end et Laravel pour le back-end, avec une fonctionnalité de messagerie privée permettant aux utilisateurs d'échanger des messages en toute confidentialité.",
@@ -564,7 +557,21 @@ const translations = {
             cssGenerator: "Générateur de code CSS dynamique avec une interface intuitive en HTML, CSS, et JavaScript, et un back-end PHP pour des fonctionnalités avancées."
         },
 
-        // Boutons et actions
+        experienceDesc1: "Développement et maintenance de sites web (HTML, CSS, JavaScript, PHP, MySQL).",
+        experienceDesc2: "Gestion des réseaux sociaux : création de contenu, animation de communauté et analyse des performances.",
+        experienceDesc3: "Collaboration avec les équipes marketing et techniques pour aligner les objectifs stratégiques.",
+        experienceDesc4: "Optimisation de l'expérience utilisateur (UX) et référencement naturel (SEO).",
+        experienceDesc5: "Utilisation d'outils de gestion de contenu (WordPress, etc.) et de suivi des réseaux sociaux.",
+        
+        projetPersonnelDesc1: "Conception et développement complet du site web en autonomie (front-end et back-end).",
+        projetPersonnelDesc2: "Optimisation du référencement naturel (SEO) et de l'expérience utilisateur (UX).",
+        projetPersonnelDesc3: "Gestion de l'hébergement, de la maintenance et des mises à jour techniques.",
+        projetPersonnelDesc4: "Projet réalisé dans le cadre de mon activité de freelance, démontrant ma capacité à mener un projet de A à Z.",
+        
+        jobEtudiantDesc1: "Accueil des clients et gestion de la prise de commande.",
+        jobEtudiantDesc2: "Préparation des repas en respectant les normes d'hygiène et de sécurité.",
+        jobEtudiantDesc3: "Gestion des stocks et réapprovisionnement des zones de travail.",
+
         regarderVideo: "Regarder la video",
         envoyerMessage: "Envoyer",
         nomFormulaire: "Votre Nom",
@@ -572,7 +579,6 @@ const translations = {
         messageFormulaire: "Votre Message"
     },
     en: {
-        // Translated content following the same structure as French
         title: "Full Stack Web Developer",
         subtitle: "Looking for Work-Study Program",
         competences: "Skills",
@@ -611,7 +617,6 @@ const translations = {
         },
 
         projetsDesc: {
-            // Traduire également les descriptions de projets
             webHeroTech: "Development and deployment of complete WebHeroTech website using modern technologies.",
             myTwitter: "Web application inspired by Twitter, using React for the front-end and Laravel for the back-end, with a private messaging feature allowing users to exchange messages confidentially.",
             mySpotify: "Spotify clone created with React for the user interface and Docker to ensure maximum application portability.",
@@ -622,6 +627,21 @@ const translations = {
             cssGenerator: "Dynamic CSS code generator with an intuitive interface in HTML, CSS, and JavaScript, and a PHP back-end for advanced features."
         },
 
+        experienceDesc1: "Development and maintenance of websites (HTML, CSS, JavaScript, PHP, MySQL).",
+        experienceDesc2: "Social media management: content creation, community management, and performance analysis.",
+        experienceDesc3: "Collaboration with marketing and technical teams to align strategic goals.",
+        experienceDesc4: "Optimization of user experience (UX) and natural referencing (SEO).",
+        experienceDesc5: "Use of content management tools (WordPress, etc.) and social media tracking tools.",
+        
+        projetPersonnelDesc1: "Complete design and development of the website autonomously (front-end and back-end).",
+        projetPersonnelDesc2: "Optimization of natural referencing (SEO) and user experience (UX).",
+        projetPersonnelDesc3: "Management of hosting, maintenance, and technical updates.",
+        projetPersonnelDesc4: "Project carried out as part of my freelance activity, demonstrating my ability to lead a project from A to Z.",
+        
+        jobEtudiantDesc1: "Customer reception and order management.",
+        jobEtudiantDesc2: "Meal preparation while respecting hygiene and safety standards.",
+        jobEtudiantDesc3: "Stock management and restocking of work areas.",
+
         regarderVideo: "Watch the video",
         envoyerMessage: "Send",
         nomFormulaire: "Your Name",
@@ -629,7 +649,6 @@ const translations = {
         messageFormulaire: "Your Message"
     },
     es: {
-        // Traduire également en espagnol suivant la même structure
         title: "Desarrollador Web Full Stack",
         subtitle: "Buscando programa de formación dual",
         competences: "Habilidades",
@@ -668,7 +687,6 @@ const translations = {
         },
 
         projetsDesc: {
-            // Traduire également les descriptions de projets
             webHeroTech: "Desarrollo e implementación del sitio web completo de WebHeroTech utilizando tecnologías modernas.",
             myTwitter: "Aplicación web inspirada en Twitter, utilizando React para el front-end y Laravel para el back-end, con una función de mensajería privada que permite a los usuarios intercambiar mensajes de forma confidencial.",
             mySpotify: "Clon de Spotify creado con React para la interfaz de usuario y Docker para garantizar la máxima portabilidad de la aplicación.",
@@ -678,6 +696,22 @@ const translations = {
             frameworkCss: "Creación de un framework CSS personalizado con componentes modulares en HTML, CSS, JavaScript y SASS para un diseño responsivo",
             cssGenerator: "Generador de código CSS dinámico con una interfaz intuitiva en HTML, CSS y JavaScript, y un back-end PHP para funciones avanzadas."
         },
+
+        experienceDesc1: "Desarrollo y mantenimiento de sitios web (HTML, CSS, JavaScript, PHP, MySQL).",
+        experienceDesc2: "Gestión de redes sociales: creación de contenido, gestión de la comunidad y análisis del rendimiento.",
+        experienceDesc3: "Colaboración con los equipos de marketing y técnicos para alinear los objetivos estratégicos.",
+        experienceDesc4: "Optimización de la experiencia del usuario (UX) y posicionamiento SEO.",
+        experienceDesc5: "Uso de herramientas de gestión de contenido (WordPress, etc.) y de seguimiento en redes sociales.",
+        
+        projetPersonnelDesc1: "Diseño y desarrollo completo del sitio web de forma autónoma (front-end y back-end).",
+        projetPersonnelDesc2: "Optimización del posicionamiento SEO y de la experiencia del usuario (UX).",
+        projetPersonnelDesc3: "Gestión de la hosting, mantenimiento y actualizaciones técnicas.",
+        projetPersonnelDesc4: "Proyecto realizado dentro de mi actividad como freelance, demostrando mi capacidad para llevar a cabo un proyecto de la A a la Z.",
+        
+        jobEtudiantDesc1: "Recepción de clientes y gestión de pedidos.",
+        jobEtudiantDesc2: "Preparación de comidas respetando las normas de higiene y seguridad.",
+        jobEtudiantDesc3: "Gestión de inventarios y reposición de las zonas de trabajo.",
+
 
         regarderVideo: "Ver el video",
         envoyerMessage: "Enviar",
