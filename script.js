@@ -935,3 +935,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Erreur de chargement des vidéos:', error));
 });
+
+
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.querySelector(".floating-menu").classList.toggle("active");
+    document.querySelector(".floating-buttons").classList.toggle("active");
+});
