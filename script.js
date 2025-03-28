@@ -863,3 +863,40 @@ function downloadPDF() {
     document.body.removeChild(link);
 }
 window.downloadPDF = downloadPDF;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Charger les données de vidéos
+    fetch('videos.json')
+        .then(response => response.json())
+        .then(videos => {
+            // Sélectionner tous les boutons de vidéo
+            const videoButtons = document.querySelectorAll('.btn-success');
+            
+            videoButtons.forEach((button) => {
+                // Récupérer le titre du projet à partir de l'attribut data-project-title
+                const projectTitle = button.getAttribute('data-project-title');
+                
+                // Trouver la vidéo correspondante en fonction du titre du projet
+                const matchedVideo = videos.find(video => 
+                    video.title.toLowerCase().includes(projectTitle.toLowerCase().replace(' ', ''))
+                );
+                
+                if (matchedVideo) {
+                    button.addEventListener('click', () => {
+                        // Mettre à jour le titre du modal
+                        document.querySelector('#exampleModal .modal-title').textContent = projectTitle;
+                        
+                        // Mettre à jour la source de la vidéo
+                        const videoElement = document.querySelector('#exampleModal video');
+                        const sourceElement = videoElement.querySelector('source');
+                        sourceElement.src = matchedVideo.videoUrl;
+                        
+                        // Recharger la vidéo
+                        videoElement.load();
+                    });
+                }
+            });
+        })
+        .catch(error => console.error('Erreur de chargement des vidéos:', error));
+});

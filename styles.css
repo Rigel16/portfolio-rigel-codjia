@@ -352,7 +352,7 @@ body {
         .project-image {
             width: 100%;
             height: 200px;
-            background-color: #007bff; /* Choisir la couleur de fond de ton choix */
+            background-color: #007bff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -364,7 +364,7 @@ body {
         }
         
         .webherotech-text {
-            font-family: 'Arial', sans-serif; /* Choisis la police que tu préfères */
+            font-family: 'Arial', sans-serif; 
         }
         
 
@@ -562,8 +562,6 @@ body {
             background-size: cover;
             background-position: center;
         }
-
-        /* Ajout de styles pour l'animation de hover sur les compétences */
         .skill-item {
             position: relative;
             overflow: hidden;
@@ -583,61 +581,7 @@ body {
         .skill-item:hover::after {
             transform: translateX(100%);
             transition: transform 0.6s ease;
-        }
-
-        /* Style pour le mode impression */
-        @media print {
-            .floating-menu,
-            .language-selector,
-            .notification-badge,
-            #particles-js {
-                display: none;
             }
-
-            .container {
-                box-shadow: none;
-            }
-
-            .section {
-                break-inside: avoid;
-            }
-        }
-
-
-
-        .navbar {
-            width: 100%;
-            background-color: var(--primary);
-            padding: 1rem 2rem;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-list {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .navbar-item a {
-            text-decoration: none;
-            color: white;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        
-        .navbar-item a:hover {
-            color: #a0c4ff;
-        }
         
         body {
             padding-top: 70px; /* Pour éviter que le contenu soit caché derrière la navbar */

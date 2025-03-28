@@ -170,12 +170,10 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
-                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Regarder la video</button></span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="WebHeroTech">Regarder la video</button></span>
                         </div>
                     </div>
-                    
                 </div>
-                
             </div>
             <div class="project-gallery">
                 <div class="project-card">
@@ -193,6 +191,7 @@
                             <span class="tech-badge">Laravel</span>
                             <span class="tech-badge">React</span>
                             <span class="tech-badge">API</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="My_Twitter">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -215,6 +214,7 @@
                             <span class="tech-badge">React</span>
                             <span class="tech-badge">API</span>
                             <span class="tech-badge">Docker</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="My_Spotify">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -235,6 +235,7 @@
                             <span class="tech-badge">HTML</span>
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">Plugin</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="Puissance_4">Regarder la video</button></span>
                         </div>
                     </div>
                 </div>
@@ -253,6 +254,7 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="My_meetic">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -272,6 +274,7 @@
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
                             <span class="tech-badge">MySQL</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="My_cinema">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -290,6 +293,7 @@
                             <span class="tech-badge">HTML</span>
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">SASS</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="My_Twitter">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -308,6 +312,7 @@
                             <span class="tech-badge">HTML</span>
                             <span class="tech-badge">CSS</span>
                             <span class="tech-badge">PHP</span>
+                            <span><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-project-title="css_generator">Regarder la video</button></span>
                         </div>
                     </div>
                     
@@ -383,18 +388,21 @@
     </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Titre de la vidéo</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body card">
-            <video controls>
-                <source src="https://www.dropbox.com/scl/fi/4bgriv3dgod1ikoc9bpa1/Enregistrement-de-l-cran-2025-03-20-12.39.14.mov?rlkey=iptiab7sbnqcxwnsw895gvsd2&st=jisg9aub&raw=1" type="video/mp4">
-            </video>
-                    </div>
+          <video id="project-video" controls>
+            <source src="" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
